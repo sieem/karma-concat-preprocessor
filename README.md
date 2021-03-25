@@ -1,8 +1,10 @@
-# karma-concat-preprocessor
+# karma-concat-preprocessor-with-ignore
 File concatenation preprocessor for [Karma JavaScript runner](https://github.com/karma-runner/karma)
 
+*Fork of [karma-concat-preprocessor](https://github.com/JCThePants/karma-concat-preprocessor)*
+
 ## Installation
-    npm install karma-concat-preprocessor --save-dev
+    npm install karma-concat-preprocessor-with-ignore --save-dev
     
 ## Configuration
 The preprocessor must be configured in the `karma.conf.js` file.
@@ -10,7 +12,7 @@ The preprocessor must be configured in the `karma.conf.js` file.
 Firstly, you will need to include entries in the `plugins` property and `preprocessors` property:
 
     plugins: [
-        'karma-concat-preprocessor'
+        'karma-concat-preprocessor-with-ignore'
     ],
     preprocessors: {
         '**/*': ['concat']
