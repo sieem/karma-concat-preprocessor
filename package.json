@@ -1,13 +1,13 @@
 {
-  "name": "karma-concat-preprocessor",
+  "name": "karma-concat-preprocessor-with-ignore",
   "version": "0.1.4",
   "author": "JCThePants <jcthepants@gmail.com>",
   "license": "MIT",
   "description": "A Karma preprocessor. Concat multiple files into a single file with optional header and footer.",
   "main": "index.js",
-  "homepage": "https://github.com/JCThePants/karma-concat-preprocessor",
+  "homepage": "https://github.com/sieem/karma-concat-preprocessor",
   "bugs": {
-    "url" : "https://github.com/JCThePants/karma-concat-preprocessor/issues"
+    "url" : "https://github.com/sieem/karma-concat-preprocessor/issues"
   },
   "keywords": [
     "karma-plugin",

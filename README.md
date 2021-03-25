@@ -52,7 +52,8 @@ Now you will need to configure which files will be concatenated into the output(
                 file: 'concats/concatenated2.js' // The output file
                 inputs: [
                     'src/**/*.js'
-                ]
+                ],
+                ignore: 'src/**/*.ts',
             },
         ]
     }

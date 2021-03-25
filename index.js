@@ -12,7 +12,7 @@ function concat(info, basePath, config) {
 
     var contents,
         file   = getFilePath(basePath, info.file),
-        files  = getGlobFiles(info.inputs || info.inputFiles),
+        files  = getGlobFiles(info.inputs || info.inputFiles, info.ignore),
         footer = info.footer || config.footer,
         header = info.header || config.header,
         result;
@@ -43,13 +43,13 @@ function getFilePath(basePath, file) {
 }
 
 // convert array of glob and non-glob file names to array of matched file names.
-function getGlobFiles(files) {
+function getGlobFiles(files, ignore = '') {
     var results = [];
     files.map(function (file) {
 
         file = file.replace('\\', '/');
 
-        var globFiles = glob(file, { sync: true });
+        var globFiles = glob(file, { sync: true, ignore });
         Array.prototype.push.apply(results, globFiles);
     });
     return results;
